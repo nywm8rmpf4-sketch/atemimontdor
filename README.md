@@ -106,3 +106,7 @@ Fichiers principaux :
 - Ajout du bureau 2026–2027 et des référents techniques.
 - Intégration du règlement intérieur et des statuts.
 - Ajout du lien dans le sous-menu « Qui sommes-nous ».
+
+## Mise à jour V6.3
+- Les cartes de la page Disciplines sont maintenant cliquables.
+- Chaque carte renvoie directement vers la section détaillée correspondante de la page « Le fondement de notre pratique ».

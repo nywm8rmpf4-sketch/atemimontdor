@@ -1102,3 +1102,36 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
   .office-grid{grid-template-columns:1fr}
   .regulation-item{padding-left:22px;padding-top:70px}
 }
+
+
+/* Cartes de navigation des disciplines */
+.discipline-link-card{
+  position:relative;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.discipline-link-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 34px rgba(55,42,25,.10);
+  border-color:rgba(179,138,59,.55);
+}
+.discipline-card-link{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  border-radius:inherit;
+}
+.discipline-link-card a:not(.discipline-card-link),
+.discipline-link-card button{
+  position:relative;
+  z-index:3;
+}
+.discipline-more{
+  margin-top:14px;
+  color:var(--red-dark);
+  font-weight:800;
+  font-size:.92rem;
+}
+.discipline-link-card:focus-within{
+  outline:3px solid rgba(179,138,59,.35);
+  outline-offset:3px;
+}
