@@ -126,3 +126,7 @@ Fichiers principaux :
 
 ## Mise à jour V6.9
 - Remplacement de la vidéo des rencontres de Tui Shou de mai 2026 par une version compressée de moins de 25 Mo.
+
+## Mise à jour V6.10
+- Renommage de la vidéo en `rencontre-tuishou-mai-2026.mp4`.
+- Mise à jour de la page galerie avec le nouveau nom de fichier.
