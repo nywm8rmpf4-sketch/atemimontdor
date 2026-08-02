@@ -203,3 +203,12 @@ Fichiers principaux :
 - Structuration du texte en dix chapitres, de la quête initiale de puissance à la transmission.
 - Ajout de liens internes vers le parcours du fondateur, le programme pédagogique et les interventions en entreprise.
 - Navigation vers les lettres précédente et suivante.
+
+## Version 7.0 — Nouvelle architecture
+- Réorganisation de la navigation autour de six rubriques : Découvrir, Pratiquer, Le dojo, Ressources, Association et Contact.
+- Création de la page « Commencer » pour les nouveaux visiteurs.
+- Création de la page « L’équipe » regroupant enseignants et bureau.
+- Transformation des Lettres des professeurs en bibliothèque filtrable et recherchable.
+- Simplification de l’accueil et ajout de trois portes d’entrée rapides.
+- Refonte du pied de page et amélioration de la navigation mobile.
+- Conservation des pages et URL historiques du nouveau site.
