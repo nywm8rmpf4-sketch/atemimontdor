@@ -1,6 +1,98 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lexique martial chinois | ATEMI Mont d'Or</title><meta name="description" content="Lexique du vocabulaire martial chinois utilisé à ATEMI Mont d’Or : Qi Gong, Tai Chi, Tui Shou, postures, déplacements et principes internes.">
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="animations.css"><link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="styles.css?v=7.5"><link rel="stylesheet" href="animations.css"><link rel="stylesheet" href="responsive.css">
+
+<style id="mobile-nav-critical">
+@media (max-width:900px){
+  .desktop-menu{display:none!important}
+  .mobile-menu-shell[hidden]{display:none!important}
+  .mobile-menu-shell{
+    position:fixed!important;
+    inset:0!important;
+    z-index:99999!important;
+    height:var(--mobile-vh,100dvh)!important;
+    background:transparent!important;
+  }
+  .mobile-menu-backdrop{
+    position:absolute!important;
+    inset:0!important;
+    background:rgba(28,22,16,.42)!important;
+  }
+  .mobile-menu-panel{
+    position:absolute!important;
+    top:0!important;
+    right:0!important;
+    bottom:0!important;
+    width:min(100%,430px)!important;
+    height:var(--mobile-vh,100dvh)!important;
+    overflow:hidden!important;
+    background:#f8f1e6!important;
+    box-shadow:-18px 0 45px rgba(42,31,18,.22)!important;
+  }
+  .mobile-menu-level[hidden]{display:none!important}
+  .mobile-menu-level{
+    position:absolute!important;
+    inset:0!important;
+    display:grid!important;
+    grid-template-rows:auto minmax(0,1fr)!important;
+    background:#f8f1e6!important;
+  }
+  .mobile-menu-header{
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    align-items:center!important;
+    gap:12px!important;
+    min-height:76px!important;
+    padding:calc(12px + env(safe-area-inset-top)) 18px 12px!important;
+    border-bottom:1px solid rgba(90,70,45,.18)!important;
+    background:#f8f1e6!important;
+  }
+  .mobile-menu-header.has-back{
+    grid-template-columns:auto 1fr auto!important;
+  }
+  .mobile-menu-content{
+    min-height:0!important;
+    overflow-y:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+    overscroll-behavior:contain!important;
+    padding:16px 18px calc(34px + env(safe-area-inset-bottom))!important;
+    background:#f8f1e6!important;
+  }
+  .mobile-menu-content>a,
+  .mobile-menu-section{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    width:100%!important;
+    min-height:54px!important;
+    padding:13px 14px!important;
+    margin:0 0 8px!important;
+    border:1px solid rgba(90,70,45,.18)!important;
+    border-radius:14px!important;
+    background:#fffaf1!important;
+    color:#33291f!important;
+    font:inherit!important;
+    font-size:1.05rem!important;
+    text-align:left!important;
+    text-decoration:none!important;
+    box-sizing:border-box!important;
+  }
+  .mobile-menu-actions{
+    display:grid!important;
+    gap:10px!important;
+    padding-top:12px!important;
+  }
+  .menu-toggle{
+    position:relative!important;
+    z-index:100000!important;
+  }
+  body.mobile-menu-open{overflow:hidden!important}
+}
+@media (min-width:901px){
+  .mobile-menu-shell{display:none!important}
+}
+</style>
+
 </head><body>
 
 
@@ -84,11 +176,11 @@
     </nav>
   </div>
 
-  <div class="mobile-menu-shell" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-shell" id="mobile-menu" aria-hidden="true" hidden>
     <div class="mobile-menu-backdrop" data-close-mobile-menu></div>
 
     <nav class="mobile-menu-panel" aria-label="Navigation mobile">
-      <div class="mobile-menu-level mobile-menu-root is-active" data-level="root">
+      <div class="mobile-menu-level mobile-menu-root" data-level="root" aria-hidden="false">
         <div class="mobile-menu-header">
           <strong>Menu</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -120,8 +212,8 @@
         </div>
       </div>
 
-      <div class="mobile-menu-level" data-level="discover">
-        <div class="mobile-menu-header">
+      <div class="mobile-menu-level" data-level="discover" aria-hidden="true" hidden>
+        <div class="mobile-menu-header has-back">
           <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
           <strong>Découvrir</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -137,8 +229,8 @@
         </div>
       </div>
 
-      <div class="mobile-menu-level" data-level="practice">
-        <div class="mobile-menu-header">
+      <div class="mobile-menu-level" data-level="practice" aria-hidden="true" hidden>
+        <div class="mobile-menu-header has-back">
           <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
           <strong>Pratiquer</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -154,8 +246,8 @@
         </div>
       </div>
 
-      <div class="mobile-menu-level" data-level="dojo">
-        <div class="mobile-menu-header">
+      <div class="mobile-menu-level" data-level="dojo" aria-hidden="true" hidden>
+        <div class="mobile-menu-header has-back">
           <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
           <strong>Le dojo</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -171,8 +263,8 @@
         </div>
       </div>
 
-      <div class="mobile-menu-level" data-level="resources">
-        <div class="mobile-menu-header">
+      <div class="mobile-menu-level" data-level="resources" aria-hidden="true" hidden>
+        <div class="mobile-menu-header has-back">
           <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
           <strong>Ressources</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -186,8 +278,8 @@
         </div>
       </div>
 
-      <div class="mobile-menu-level" data-level="association">
-        <div class="mobile-menu-header">
+      <div class="mobile-menu-level" data-level="association" aria-hidden="true" hidden>
+        <div class="mobile-menu-header has-back">
           <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
           <strong>Association</strong>
           <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
@@ -784,7 +876,7 @@
 </footer>
 
 <div class="lightbox"><button class="close-lightbox" aria-label="Fermer">×</button><img alt=""></div>
-<script src="menu.js"></script><script src="gallery.js"></script><script src="script.js"></script>
+<script src="menu.js?v=7.5"></script><script src="gallery.js"></script><script src="script.js"></script>
 
 <script>
 (() => {

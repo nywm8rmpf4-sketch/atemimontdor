@@ -244,3 +244,10 @@ Fichiers principaux :
 - Compatibilité visée : Safari iOS, Chrome Android, Samsung Internet, Firefox Android et Edge Mobile.
 - Gestion des zones sûres iPhone/Android, de l’orientation et des barres de navigateur mobiles.
 - Amélioration de l’accessibilité : attributs ARIA, boutons Retour/Fermer, fermeture avec Échap.
+
+## Version 7.5 — Correctif robuste du menu mobile
+- Les sous-menus utilisent désormais l’attribut HTML natif `hidden` : ils ne peuvent plus tous apparaître simultanément.
+- Le panneau mobile est caché nativement avant même le chargement du CSS et du JavaScript.
+- Les styles indispensables au menu sont intégrés directement dans chaque page afin d’éviter un ancien CSS conservé par Safari.
+- Ajout d’un numéro de version aux références `styles.css` et `menu.js` pour forcer le renouvellement du cache.
+- Un seul écran de menu est affiché à la fois ; la sélection d’un lien ferme immédiatement le panneau.
