@@ -304,3 +304,9 @@ Cette version :
 - neutralise les anciennes règles de visibilité, d’opacité et de transformation ;
 - conserve la navigation mobile à deux niveaux ;
 - régénère toutes les empreintes anti-cache après la correction.
+
+## Version 7.9 — Bouton « Voir les horaires » sur iPhone
+- Le cercle décoratif du bandeau d’accueil ne peut plus intercepter les touchers.
+- La grille et les boutons du héros sont placés explicitement au-dessus des éléments décoratifs.
+- Ajout de `touch-action: manipulation` pour fiabiliser les interactions tactiles.
+- Régénération complète des empreintes anti-cache SHA-256.

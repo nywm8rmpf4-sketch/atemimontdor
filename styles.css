@@ -2628,3 +2628,30 @@ body.mobile-menu-open{
     display:none !important;
   }
 }
+
+/* =========================================================
+   V7.9 — boutons du héros cliquables sur iPhone
+   ========================================================= */
+.hero::after,
+.hero:after{
+  pointer-events:none !important;
+  user-select:none !important;
+  -webkit-user-select:none !important;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:1;
+}
+
+.hero .actions,
+.hero .actions .btn{
+  position:relative;
+  z-index:3;
+  pointer-events:auto !important;
+}
+
+.hero .actions .btn{
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:rgba(159,47,47,.12);
+}
