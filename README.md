@@ -251,3 +251,9 @@ Fichiers principaux :
 - Les styles indispensables au menu sont intégrés directement dans chaque page afin d’éviter un ancien CSS conservé par Safari.
 - Ajout d’un numéro de version aux références `styles.css` et `menu.js` pour forcer le renouvellement du cache.
 - Un seul écran de menu est affiché à la fois ; la sélection d’un lien ferme immédiatement le panneau.
+
+## Version 7.6 — Affichage effectif du panneau mobile
+- Correction de la règle historique `.mobile-menu-shell { display:none; }` qui continuait à masquer le panneau après son ouverture.
+- Le panneau ouvert est désormais forcé en `display:block !important` directement dans chaque page.
+- L’état fermé reste garanti par l’attribut HTML natif `hidden`.
+- Nouveau versionnement CSS/JavaScript afin d’éviter la réutilisation du cache Safari.

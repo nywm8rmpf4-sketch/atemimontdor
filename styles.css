@@ -2571,3 +2571,16 @@ body.mobile-menu-open{
     display:none;
   }
 }
+
+
+/* V7.6 — priorité définitive du panneau mobile */
+@media(max-width:900px){
+  .mobile-menu-shell:not([hidden]){
+    display:block !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+  }
+  .mobile-menu-shell[hidden]{
+    display:none !important;
+  }
+}
