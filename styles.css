@@ -110,3 +110,192 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
   .timeline-item{grid-template-columns:70px 1fr}
   .event{grid-template-columns:1fr}
 }
+
+
+/* Actualité estivale */
+.summer-feature{
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:28px;
+  align-items:center;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:0 10px 28px rgba(55,42,25,.06);
+}
+.summer-feature img{
+  width:100%;
+  max-height:560px;
+  object-fit:contain;
+  border-radius:16px;
+  background:#efe7da;
+}
+.poster-page{
+  display:flex;
+  justify-content:center;
+}
+.poster-page img{
+  width:min(100%,900px);
+  height:auto;
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+@media(max-width:760px){
+  .summer-feature{grid-template-columns:1fr}
+  .summer-feature img{max-height:none}
+}
+
+
+/* Sous-menu Ateliers & stages */
+.menu-group{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.menu-group > a{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+}
+.menu-group > a::after{
+  content:"▾";
+  font-size:.72rem;
+  color:var(--gold);
+}
+.submenu{
+  position:absolute;
+  top:calc(100% + 14px);
+  left:-16px;
+  min-width:250px;
+  display:none;
+  flex-direction:column;
+  padding:10px;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  z-index:80;
+}
+.submenu::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:-16px;
+  height:18px;
+}
+.submenu a{
+  display:block;
+  padding:10px 12px;
+  border-radius:10px;
+  white-space:nowrap;
+}
+.submenu a:hover{
+  background:#f2e8d8;
+}
+.menu-group:hover .submenu,
+.menu-group:focus-within .submenu{
+  display:flex;
+}
+
+/* Calendrier annuel */
+.year-calendar{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+.month-card{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:22px;
+  min-height:190px;
+  box-shadow:0 10px 28px rgba(55,42,25,.05);
+}
+.month-card.featured{
+  border-top:5px solid var(--red);
+}
+.month-card h2{
+  font-size:1.45rem;
+  margin-bottom:15px;
+}
+.month-card h3{
+  margin-bottom:8px;
+}
+.month-card.empty{
+  opacity:.72;
+}
+.event-tag{
+  display:inline-block;
+  margin-bottom:12px;
+  padding:5px 10px;
+  border-radius:999px;
+  background:#f0e2ca;
+  color:#6d4b16;
+  font-size:.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.calendar-note{
+  margin-top:28px;
+  padding:22px;
+  border-left:5px solid var(--gold);
+  border-radius:0 18px 18px 0;
+  background:#fffaf1;
+}
+
+@media(max-width:1000px){
+  .year-calendar{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:900px){
+  .menu-group{
+    width:100%;
+    display:block;
+  }
+  .menu-group > a{
+    width:100%;
+  }
+  .submenu{
+    position:static;
+    display:flex;
+    box-shadow:none;
+    border:0;
+    border-left:2px solid var(--gold);
+    border-radius:0;
+    margin:5px 0 0 10px;
+    padding:4px 0 4px 12px;
+    background:transparent;
+    min-width:0;
+  }
+  .submenu::before{display:none}
+  .submenu a{
+    padding:7px 8px;
+    white-space:normal;
+    font-size:.88rem;
+  }
+}
+
+@media(max-width:640px){
+  .year-calendar{grid-template-columns:1fr}
+}
+
+.price-summary{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  background:var(--paper-2);
+  border-radius:16px;
+  overflow:hidden;
+}
+.price-summary th,.price-summary td{
+  padding:14px 16px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+}
+.price-summary th{
+  background:#f0e2ca;
+  color:#5d4319;
+}
