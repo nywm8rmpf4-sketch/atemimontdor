@@ -135,8 +135,3 @@ Fichiers principaux :
 - Ajout de la chanson du club sur la page d’accueil.
 - Intégration d’un lecteur audio pour « ATEMI — Entre le ciel et la terre ».
 - Fichier audio : `atemi-entre-le-ciel-et-la-terre.mp3`.
-
-## Mise à jour V6.13
-- Refonte graphique de la page Cotisations.
-- Mise en valeur des montants, des formules et des modalités de paiement.
-- Distinction claire entre accès à tous les cours et cours fixe hebdomadaire.
