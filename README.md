@@ -168,3 +168,38 @@ Fichiers principaux :
 - Ajout de liens directs vérifiés vers des articles du Progrès de 2011 à 2026.
 - Ajout d’une section « Autour du fondateur » avec des articles et revues spécialisées.
 - Conservation séparée des références historiques sans lien public direct confirmé.
+
+## Mise à jour V6.20
+- Suppression des dépendances et boutons renvoyant vers l’ancien site dans la rubrique des lettres.
+- Intégration en texte autonome des lettres « Transmission d’un art martial », « Les cinq émotions » et « Yi Quan ou Da Cheng Chuan ».
+- Mise en page dédiée à la lecture longue.
+
+## Mise à jour V6.21
+- Finalisation de la première lettre : « Proposition d’approche pour la transmission d’un art martial ».
+- Ajout d’un sommaire cliquable, d’un fil d’Ariane et d’une navigation entre les lettres.
+- Ajout de liens internes vers le programme pédagogique, les fondements, l’équipe pédagogique et le lexique.
+- Optimisation de la lecture sur mobile et de l’impression.
+
+## Mise à jour V6.22
+- Migration complète de la lettre « La théorie des cinq éléments — Wu Xing ».
+- Ajout d’un sommaire cliquable, des cycles d’engendrement et de domination et d’un tableau de correspondances.
+- Ajout de liens internes vers le lexique, le programme pédagogique et les disciplines concernées.
+- Navigation vers la lettre précédente et la lettre suivante.
+
+## Mise à jour V6.23
+- Migration de la lettre « Théorie du Yin/Yang — cosmogénèse taoïste ».
+- Ajout d’un sommaire, d’un schéma du Taijitu et d’un rappel des quatre règles fondamentales.
+- Ajout des liens internes vers le lexique, le programme pédagogique et les disciplines concernées.
+- Navigation entre les lettres Wu Xing, Yin/Yang et Théorie des méridiens.
+
+## Mise à jour V6.24
+- Migration de la quatrième lettre : « Introduction à la théorie des méridiens ».
+- Ajout du sommaire, des huit vaisseaux extraordinaires et du tableau des douze méridiens ordinaires.
+- Intégration de l’horloge énergétique traditionnelle, des cinq couches de méridiens et des liens avec le Qi Gong.
+- Ajout d’un encadré de prudence médicale et d’une navigation entre les lettres.
+
+## Mise à jour V6.25
+- Migration de la cinquième lettre : « Apports d’une longue pratique de l’art martial ».
+- Structuration du texte en dix chapitres, de la quête initiale de puissance à la transmission.
+- Ajout de liens internes vers le parcours du fondateur, le programme pédagogique et les interventions en entreprise.
+- Navigation vers les lettres précédente et suivante.
