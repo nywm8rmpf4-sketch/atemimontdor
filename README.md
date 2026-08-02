@@ -310,3 +310,9 @@ Cette version :
 - La grille et les boutons du héros sont placés explicitement au-dessus des éléments décoratifs.
 - Ajout de `touch-action: manipulation` pour fiabiliser les interactions tactiles.
 - Régénération complète des empreintes anti-cache SHA-256.
+
+## Version 7.10 — Liens détaillés des disciplines
+- Ajout d’un lien visible « Découvrir en détail » sur toutes les cartes de la page Disciplines.
+- Liens directs vers les sections détaillées du Nei Gong Yang Sheng, Tai Chi Chuan, Xing Yi Quan, Bagua Zhang et Da Cheng Chuan.
+- Ajout d’ancres spécifiques dans le programme pédagogique pour le Tui Shou et l’auto-défense.
+- Amélioration du survol et de la navigation au clavier des cartes.
