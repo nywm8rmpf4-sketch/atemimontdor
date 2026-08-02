@@ -110,3 +110,16 @@ Fichiers principaux :
 ## Mise à jour V6.3
 - Les cartes de la page Disciplines sont maintenant cliquables.
 - Chaque carte renvoie directement vers la section détaillée correspondante de la page « Le fondement de notre pratique ».
+
+## Mise à jour V6.5
+- Correction des liens de la page « Disciplines ».
+- Les cartes Nei Gong, Xing Yi Quan, Bagua Zhang et Da Cheng Chuan renvoient désormais vers leur description détaillée.
+
+## Mise à jour V6.6
+- Les noms des enseignants dans la page Horaires sont maintenant cliquables.
+- Jean-Claude Guillot renvoie vers sa page dédiée.
+- Jérôme Guillot et Françoise Bellet renvoient vers leur fiche sur la page Équipe pédagogique.
+
+## Mise à jour V6.7
+- Ajout de la vidéo « Rencontres de Tui Shou — mai 2026 » dans la galerie.
+- La vidéo est intégrée localement au format MP4.
