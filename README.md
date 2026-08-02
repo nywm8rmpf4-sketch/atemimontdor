@@ -290,3 +290,17 @@ Le script :
 ### Automatisation GitHub
 
 Le fichier `.github/workflows/version-assets.yml` permet d’exécuter automatiquement ce traitement lors d’un envoi sur la branche `main`, puis d’enregistrer les références versionnées dans le dépôt.
+
+## Version 7.8 — Correction définitive de l’ouverture du menu
+
+Le panneau mobile restait hors écran à cause d’une ancienne règle
+`transform: translateX(100%)` encore présente dans la feuille de styles.
+
+Cette version :
+
+- supprime toute translation et toute animation du menu mobile ;
+- utilise uniquement l’attribut HTML natif `hidden` pour ouvrir et fermer ;
+- force le panneau et le niveau actif au premier plan ;
+- neutralise les anciennes règles de visibilité, d’opacité et de transformation ;
+- conserve la navigation mobile à deux niveaux ;
+- régénère toutes les empreintes anti-cache après la correction.

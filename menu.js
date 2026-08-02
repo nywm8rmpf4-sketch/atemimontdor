@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
-  const shell = document.querySelector('.mobile-menu-shell');
-  const panel = document.querySelector('.mobile-menu-panel');
-  const levels = [...document.querySelectorAll('.mobile-menu-level')];
+  const shell = document.getElementById('mobile-menu');
+  const panel = shell?.querySelector('.mobile-menu-panel');
+  const levels = shell ? [...shell.querySelectorAll('.mobile-menu-level')] : [];
 
   if (!toggle || !shell || !panel || !levels.length) return;
 
@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.style.setProperty('--mobile-vh', `${Math.round(height)}px`);
   };
 
-  const showLevel = name => {
+  const showLevel = (name) => {
     levels.forEach(level => {
       const active = level.dataset.level === name;
       level.hidden = !active;
       level.setAttribute('aria-hidden', active ? 'false' : 'true');
       if (active) {
-        const scroller = level.querySelector('.mobile-menu-content');
-        if (scroller) scroller.scrollTop = 0;
+        const content = level.querySelector('.mobile-menu-content');
+        if (content) content.scrollTop = 0;
       }
     });
   };
@@ -41,41 +41,42 @@ document.addEventListener('DOMContentLoaded', () => {
     showLevel('root');
   };
 
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', event => {
+    event.preventDefault();
+    event.stopPropagation();
     shell.hidden ? openMenu() : closeMenu();
   });
 
-  shell.querySelectorAll('[data-close-mobile-menu]').forEach(el => {
-    el.addEventListener('click', closeMenu);
+  shell.querySelectorAll('[data-close-mobile-menu]').forEach(button => {
+    button.addEventListener('click', closeMenu);
   });
 
-  shell.querySelectorAll('[data-open-level]').forEach(el => {
-    el.addEventListener('click', () => showLevel(el.dataset.openLevel));
+  shell.querySelectorAll('[data-open-level]').forEach(button => {
+    button.addEventListener('click', () => showLevel(button.dataset.openLevel));
   });
 
-  shell.querySelectorAll('[data-back-root]').forEach(el => {
-    el.addEventListener('click', () => showLevel('root'));
+  shell.querySelectorAll('[data-back-root]').forEach(button => {
+    button.addEventListener('click', () => showLevel('root'));
   });
 
   panel.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
 
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && !shell.hidden) closeMenu();
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !shell.hidden) closeMenu();
   });
 
-  const refresh = () => {
+  const refreshViewport = () => {
     setViewportHeight();
     if (window.innerWidth > 900) closeMenu();
   };
 
-  window.addEventListener('resize', refresh);
-  window.addEventListener('orientationchange', () => setTimeout(refresh, 150));
+  window.addEventListener('resize', refreshViewport);
+  window.addEventListener('orientationchange', () => setTimeout(refreshViewport, 150));
   window.visualViewport?.addEventListener('resize', setViewportHeight);
-  window.visualViewport?.addEventListener('scroll', setViewportHeight);
 
-  setViewportHeight();
   shell.hidden = true;
   showLevel('root');
+  setViewportHeight();
 });
