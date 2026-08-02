@@ -3,13 +3,19 @@
 <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="animations.css"><link rel="stylesheet" href="responsive.css">
 </head><body>
 
+
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Accueil ATEMI Mont d’Or">
       <img src="logo-atemi.jpg" alt="Logo ATEMI Mont d'Or">
     </a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="menu" aria-label="Navigation principale">
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="menu-icon" aria-hidden="true">☰</span>
+      <span class="menu-close-icon" aria-hidden="true">×</span>
+    </button>
+
+    <nav class="menu desktop-menu" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
 
       <div class="menu-group">
@@ -77,7 +83,128 @@
       <a class="nav-cta" href="commencer.html#essai">Essayer un cours</a>
     </nav>
   </div>
+
+  <div class="mobile-menu-shell" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-backdrop" data-close-mobile-menu></div>
+
+    <nav class="mobile-menu-panel" aria-label="Navigation mobile">
+      <div class="mobile-menu-level mobile-menu-root is-active" data-level="root">
+        <div class="mobile-menu-header">
+          <strong>Menu</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+
+        <div class="mobile-menu-content">
+          <a class="mobile-home-link" href="index.html">Accueil</a>
+
+          <button class="mobile-menu-section" type="button" data-open-level="discover">
+            <span>Découvrir</span><span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-menu-section" type="button" data-open-level="practice">
+            <span>Pratiquer</span><span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-menu-section" type="button" data-open-level="dojo">
+            <span>Le dojo</span><span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-menu-section" type="button" data-open-level="resources">
+            <span>Ressources</span><span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-menu-section" type="button" data-open-level="association">
+            <span>Association</span><span aria-hidden="true">›</span>
+          </button>
+
+          <div class="mobile-menu-actions">
+            <a class="btn btn-primary" href="commencer.html#essai">Essayer un cours</a>
+            <a class="btn btn-secondary" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu-level" data-level="discover">
+        <div class="mobile-menu-header">
+          <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
+          <strong>Découvrir</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+        <div class="mobile-menu-content">
+          <a href="commencer.html">Commencer ici</a>
+          <a href="disciplines.html">Les disciplines</a>
+          <a href="fondements-pratique.html">Fondements de la pratique</a>
+          <a href="equipe.html">L’équipe</a>
+          <a href="notre-lignee.html">Notre lignée</a>
+          <a href="temoignages.html">Témoignages</a>
+          <a href="faq.html">Questions fréquentes</a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-level" data-level="practice">
+        <div class="mobile-menu-header">
+          <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
+          <strong>Pratiquer</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+        <div class="mobile-menu-content">
+          <a href="horaires.html">Horaires</a>
+          <a href="cotisations.html">Cotisations</a>
+          <a href="programme-pedagogique.html">Programme pédagogique</a>
+          <a href="passage-de-grades.html">Passages de grades</a>
+          <a href="ateliers-stages.html">Ateliers & stages</a>
+          <a href="grands-rendez-vous-2026-2027.html">Grands rendez-vous</a>
+          <a href="pratique-estivale-2026.html">Pratique estivale</a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-level" data-level="dojo">
+        <div class="mobile-menu-header">
+          <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
+          <strong>Le dojo</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+        <div class="mobile-menu-content">
+          <a href="dojo.html">Découvrir le dojo</a>
+          <a href="galerie.html">Galerie photos & vidéos</a>
+          <a href="videos-youtube.html">Vidéos YouTube</a>
+          <a href="hymne-du-club.html">Hymne du club</a>
+          <a href="actualites.html">Actualités</a>
+          <a href="articles-presse.html">Revue de presse</a>
+          <a href="contact.html">Accès & contact</a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-level" data-level="resources">
+        <div class="mobile-menu-header">
+          <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
+          <strong>Ressources</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+        <div class="mobile-menu-content">
+          <a href="lettres-professeurs.html">Bibliothèque des lettres</a>
+          <a href="lexique.html">Lexique</a>
+          <a href="grades-formes-dojo.html">Gradés formés au dojo</a>
+          <a href="membres-honoraires-bienfaiteurs.html">Membres honoraires</a>
+          <a href="interventions-entreprise.html">Interventions en entreprise</a>
+        </div>
+      </div>
+
+      <div class="mobile-menu-level" data-level="association">
+        <div class="mobile-menu-header">
+          <button type="button" class="mobile-menu-back" data-back-root>← Retour</button>
+          <strong>Association</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Fermer le menu" data-close-mobile-menu>×</button>
+        </div>
+        <div class="mobile-menu-content">
+          <a href="qui-sommes-nous.html">Qui sommes-nous ?</a>
+          <a href="association.html#bureau">Bureau & référents</a>
+          <a href="association.html#reglement">Règlement intérieur</a>
+          <a href="association.html#statuts">Statuts</a>
+          <a href="jean-claude-guillot.html">Le fondateur</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
+
 
 
 

@@ -229,3 +229,18 @@ Fichiers principaux :
 - Informations sur la ligne TCL 21 depuis la gare de Vaise.
 - Conseils de correspondance, temps de marche indicatif et liens vers les horaires.
 - Ajout des règles de stationnement et des emplacements publics conseillés.
+
+## Version 7.3 — Menu Safari iPhone
+- Calcul dynamique de la hauteur du menu avec l’API `visualViewport` de Safari.
+- Prise en compte en temps réel des barres d’adresse et d’outils iOS.
+- Suppression de `touch-action: none`, susceptible de bloquer le défilement interne.
+- Verrouillage propre de la page d’arrière-plan sans empêcher le défilement du panneau.
+- Ajout d’une marge basse renforcée afin que les derniers liens restent accessibles au-dessus de la barre d’outils Safari.
+
+## Version 7.4 — Navigation mobile universelle
+- Remplacement du long menu mobile par un panneau à deux niveaux.
+- Un seul sous-menu est affiché à la fois, ce qui supprime les problèmes de défilement sur les écrans courts.
+- Hauteur recalculée avec `visualViewport`, avec repli sur `innerHeight` et `100dvh`.
+- Compatibilité visée : Safari iOS, Chrome Android, Samsung Internet, Firefox Android et Edge Mobile.
+- Gestion des zones sûres iPhone/Android, de l’orientation et des barres de navigateur mobiles.
+- Amélioration de l’accessibilité : attributs ARIA, boutons Retour/Fermer, fermeture avec Échap.
