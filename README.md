@@ -212,3 +212,20 @@ Fichiers principaux :
 - Simplification de l’accueil et ajout de trois portes d’entrée rapides.
 - Refonte du pied de page et amélioration de la navigation mobile.
 - Conservation des pages et URL historiques du nouveau site.
+
+## Version 7.1 — Correctifs Safari iPhone
+- Le menu mobile occupe désormais la hauteur réellement disponible sous l’en-tête et peut être parcouru jusqu’au dernier lien.
+- Ajout du défilement inertiel iOS, de la gestion des zones sûres et du verrouillage de la page derrière le menu.
+- Fermeture du menu après sélection, avec la touche Échap et lors du retour à l’affichage desktop.
+- La navigation de la page « Fondement de notre pratique » reste visible sous l’en-tête sur iPhone.
+- Les boutons de cette navigation sont disposés sur une ligne horizontale défilable.
+- Correction du décalage des ancres pour que les titres ne soient pas masqués par les barres fixes.
+
+## Version 7.2 — Venir au dojo
+- Remplacement de la page de contact incomplète par une page complète « Venir au dojo ».
+- Ajout d’une carte interactive centrée sur le 6 rue du Lavoir.
+- Ajout de boutons d’itinéraire Google Maps et Apple Plans.
+- Informations TER depuis Lyon-Part-Dieu et Lyon-Vaise.
+- Informations sur la ligne TCL 21 depuis la gare de Vaise.
+- Conseils de correspondance, temps de marche indicatif et liens vers les horaires.
+- Ajout des règles de stationnement et des emplacements publics conseillés.
