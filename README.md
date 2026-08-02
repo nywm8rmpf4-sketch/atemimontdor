@@ -123,3 +123,6 @@ Fichiers principaux :
 ## Mise à jour V6.7
 - Ajout de la vidéo « Rencontres de Tui Shou — mai 2026 » dans la galerie.
 - La vidéo est intégrée localement au format MP4.
+
+## Mise à jour V6.9
+- Remplacement de la vidéo des rencontres de Tui Shou de mai 2026 par une version compressée de moins de 25 Mo.
