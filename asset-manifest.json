@@ -1,0 +1,29 @@
+{
+  "strategy": "sha256-content-hash-query-string",
+  "generated_assets": {
+    "affiche-pratique-estivale-2026.jpg": "8c84988a2306",
+    "animations.css": "64adad03b7eb",
+    "atemi-entre-le-ciel-et-la-terre.mp3": "07345919cf91",
+    "dojo-1.jpg": "7de6e9bf4e9e",
+    "dojo-2.jpg": "0eef509f9be5",
+    "dojo-3.jpg": "b2c825f6bcbc",
+    "dojo-4.jpg": "17c0afe789ba",
+    "dojo-5.jpg": "ddffc4edc623",
+    "galerie-groupe-atemi.png": "14a004855c2b",
+    "galerie-wang-fu-lai-paolo.png": "25b0deede3d1",
+    "gallery.js": "bf802b84985f",
+    "jean-claude-guillot-1.jpg": "8850d4b99b6b",
+    "jean-claude-guillot-2.jpg": "88185876e12e",
+    "jerome-guillot.jpg": "5521356ce9f3",
+    "library.js": "c0b76f08dbcd",
+    "logo-atemi.jpg": "023b04f97af4",
+    "menu.js": "bf43796055a3",
+    "photo-1.jpg": "d2e04e2fa802",
+    "photo-2.jpg": "05765f6c0b87",
+    "photo-3.jpg": "c7a64559c246",
+    "rencontre-tuishou-mai-2026.mp4": "4fdcd1cf2705",
+    "responsive.css": "763878679ee6",
+    "script.js": "3dba8723ce29",
+    "styles.css": "8e7ff1915a38"
+  }
+}

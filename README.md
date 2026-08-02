@@ -257,3 +257,36 @@ Fichiers principaux :
 - Le panneau ouvert est désormais forcé en `display:block !important` directement dans chaque page.
 - L’état fermé reste garanti par l’attribut HTML natif `hidden`.
 - Nouveau versionnement CSS/JavaScript afin d’éviter la réutilisation du cache Safari.
+
+## Version 7.7 — Versionnage automatique anti-cache
+
+Le site utilise maintenant un versionnage fondé sur l’empreinte SHA-256 du contenu des fichiers.
+
+Exemple :
+
+```html
+<link rel="stylesheet" href="styles.css?v=8c07a37c0f22">
+<script src="menu.js?v=1da8ef6b11cf"></script>
+<img src="logo-atemi.jpg?v=69f0539bf70e">
+```
+
+Dès que le contenu d’un fichier change, son empreinte change automatiquement. Le navigateur considère alors son URL comme nouvelle et recharge le fichier, sans dépendre de l’expiration de son cache.
+
+### Utilisation manuelle
+
+Après chaque modification du site, lancer depuis le dossier du site :
+
+```bash
+python3 version-assets.py
+```
+
+Le script :
+
+- calcule les empreintes des CSS, JavaScript, images, sons, vidéos, PDF et icônes ;
+- met à jour les références dans toutes les pages HTML ;
+- met à jour les images référencées depuis les feuilles CSS ;
+- produit `asset-manifest.json` pour tracer les versions publiées.
+
+### Automatisation GitHub
+
+Le fichier `.github/workflows/version-assets.yml` permet d’exécuter automatiquement ce traitement lors d’un envoi sur la branche `main`, puis d’enregistrer les références versionnées dans le dépôt.

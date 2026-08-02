@@ -1829,7 +1829,7 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
 .start-hero{
   background:
     linear-gradient(100deg,rgba(255,250,240,.98),rgba(255,250,240,.83)),
-    url("photo-1.jpg") center/cover;
+    url("photo-1.jpg?v=d2e04e2fa802") center/cover;
 }
 .start-grid{
   display:grid;
@@ -2197,7 +2197,7 @@ body.mobile-menu-open{
 .access-hero{
   background:
     linear-gradient(100deg,rgba(255,250,240,.98),rgba(255,250,240,.82)),
-    url("dojo-1.jpg") center/cover;
+    url("dojo-1.jpg?v=7de6e9bf4e9e") center/cover;
 }
 .access-intro-grid{
   display:grid;
