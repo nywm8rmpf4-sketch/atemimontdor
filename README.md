@@ -151,3 +151,20 @@ Fichiers principaux :
 - Ajout de la page interventions-entreprise.html.
 - Reprise et modernisation du contenu de l’ancienne page « Intervention en entreprise & centres de formation ».
 - Ajout des références et d’un lien depuis la page Contact.
+
+## Mise à jour V6.17
+- Ajout de la rubrique « Les lettres des professeurs ».
+- Création d’une page d’index et de 10 sous-pages dédiées.
+- Ajout du lien dans la rubrique Actualités et dans les menus.
+
+## Mise à jour V6.18
+- Ajout de la page articles-presse.html.
+- Classement des archives de presse par périodes.
+- Ajout de liens directs vers les PDF disponibles et vers la page historique pour les autres archives.
+- Ajout du lien dans la rubrique Actualités.
+
+## Mise à jour V6.19
+- Recherche complémentaire dans la presse publique.
+- Ajout de liens directs vérifiés vers des articles du Progrès de 2011 à 2026.
+- Ajout d’une section « Autour du fondateur » avec des articles et revues spécialisées.
+- Conservation séparée des références historiques sans lien public direct confirmé.
