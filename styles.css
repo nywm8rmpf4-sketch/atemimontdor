@@ -1,6 +1,6 @@
 
 :root{
-  --ink:#211f1c; --paper:#f7f2e8; --paper2:#fffdf8; --red:#9f2f2f;
+  --ink:#211f1c; --paper:#f7f2e8; --paper-2:#fffdf8; --red:#9f2f2f;
   --red-dark:#742020; --gold:#b38a3b; --sage:#6f7d63; --line:#ddd2bf;
   --muted:#6d675e; --shadow:0 18px 45px rgba(55,42,25,.12);
   --radius:22px; --max:1180px;
@@ -14,7 +14,7 @@ a{color:inherit}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(247,242,232,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(179,138,59,.25)}
 .nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:18px}
 .brand img{width:150px;height:54px;object-fit:contain;object-position:left center}
-.menu{display:flex;gap:18px;align-items:center;font-size:.93rem}
+.menu{display:flex;gap:17px;align-items:center;font-size:.92rem}
 .menu a{text-decoration:none;color:#39342e}
 .menu a:hover,.menu a.active{color:var(--red)}
 .menu-toggle{display:none;border:0;background:none;font-size:1.6rem}
@@ -26,7 +26,7 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin-top
 h1{font-size:clamp(2.7rem,6vw,5.4rem);margin-bottom:18px}
 h2{font-size:clamp(2rem,4vw,3.25rem);margin-bottom:16px}
 h3{font-size:1.35rem}
-.lead{font-size:1.16rem;color:#4f4941;max-width:750px}
+.lead{font-size:1.16rem;color:#4f4941;max-width:760px}
 .hero-photo{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);min-height:430px}
 .hero-photo img{width:100%;height:100%;object-fit:cover}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
@@ -39,7 +39,8 @@ h3{font-size:1.35rem}
 .grid{display:grid;gap:20px}
 .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.card{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 10px 28px rgba(55,42,25,.06)}
+.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 10px 28px rgba(55,42,25,.06)}
 .card.accent{border-top:4px solid var(--red)}
 .mini{font-size:.9rem;color:var(--muted)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
@@ -49,20 +50,20 @@ h3{font-size:1.35rem}
 .timeline{display:grid;gap:14px}
 .timeline-item{display:grid;grid-template-columns:90px 1fr;gap:18px;align-items:start}
 .timeline-item .year{font-weight:800;color:var(--red)}
-details{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+details{background:var(--paper-2);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
 details+details{margin-top:12px}
 summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
 .longtext p{margin:1em 0}
 .schedule-day{margin-bottom:28px}
 .schedule-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.course{background:var(--paper2);border:1px solid var(--line);border-radius:18px;padding:20px;position:relative}
+.course{background:var(--paper-2);border:1px solid var(--line);border-radius:18px;padding:20px;position:relative}
 .course:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;background:var(--gold);border-radius:4px}
 .course h3{margin-bottom:8px;padding-left:4px}
 .course .time{font-size:1.05rem;font-weight:800;color:var(--red)}
 .course .teacher{font-weight:700}
 .table-note{padding:18px;border-radius:18px;background:#fff6e8;border:1px solid #ead5ae}
 .people{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-.person{background:var(--paper2);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.person{background:var(--paper-2);border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .person .photo{aspect-ratio:4/3;background:#e8dfd2;display:flex;align-items:center;justify-content:center;color:var(--muted)}
 .person .body{padding:18px}
 .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}
@@ -81,8 +82,17 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
 .lightbox.open{display:flex}
 .lightbox img{max-height:92vh;max-width:92vw;border-radius:12px}
 .close-lightbox{position:absolute;top:20px;right:24px;background:white;border:0;border-radius:50%;width:44px;height:44px;font-size:1.5rem}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.filter-btn{border:1px solid var(--line);background:var(--paper-2);padding:10px 14px;border-radius:999px;cursor:pointer}
+.filter-btn.active{background:var(--red);color:#fff;border-color:var(--red)}
+.event-list{display:grid;gap:16px}
+.event{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start;background:var(--paper-2);border:1px solid var(--line);border-radius:18px;padding:18px}
+.event-date{font-weight:800;color:var(--red)}
+.lineage{display:grid;gap:12px;max-width:760px}
+.lineage-item{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:center}
+.lineage-dot{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:800}
 @media(max-width:900px){
-  .hero-grid,.grid-3,.people,.footer-grid{grid-template-columns:1fr 1fr}
+  .hero-grid,.grid-3,.grid-4,.people,.footer-grid{grid-template-columns:1fr 1fr}
   .menu{position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:18px 24px;display:none;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
   .menu.open{display:flex}
   .menu-toggle{display:block}
@@ -91,11 +101,12 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
 }
 @media(max-width:640px){
   .container{width:min(100% - 22px,var(--max))}
-  .hero{padding-top:46px}.hero-grid,.grid-2,.grid-3,.people,.footer-grid,.schedule-list,.stats{grid-template-columns:1fr}
+  .hero{padding-top:46px}.hero-grid,.grid-2,.grid-3,.grid-4,.people,.footer-grid,.schedule-list,.stats{grid-template-columns:1fr}
   .hero-photo{min-height:300px}
   .brand img{width:124px;height:46px}
   .section{padding:48px 0}
   .gallery{grid-template-columns:1fr}
   .gallery figure:first-child{grid-column:auto;min-height:280px}
   .timeline-item{grid-template-columns:70px 1fr}
+  .event{grid-template-columns:1fr}
 }

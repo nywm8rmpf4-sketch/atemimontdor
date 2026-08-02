@@ -1,18 +1,11 @@
 
-const toggle=document.querySelector('.menu-toggle');
-const menu=document.querySelector('.menu');
-if(toggle&&menu){toggle.addEventListener('click',()=>menu.classList.toggle('open'));}
-document.querySelectorAll('.gallery img').forEach(img=>{
-  img.addEventListener('click',()=>{
-    const lb=document.querySelector('.lightbox');
-    lb.querySelector('img').src=img.src;
-    lb.classList.add('open');
-  });
-});
-document.querySelectorAll('.close-lightbox,.lightbox').forEach(el=>{
-  el.addEventListener('click',e=>{
-    if(e.target===el || el.classList.contains('close-lightbox')){
-      document.querySelector('.lightbox')?.classList.remove('open');
-    }
+document.querySelectorAll('[data-filter]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const value=btn.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('[data-category]').forEach(item=>{
+      item.style.display=(value==='all'||item.dataset.category.includes(value))?'block':'none';
+    });
   });
 });

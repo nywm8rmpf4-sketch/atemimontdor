@@ -1,7 +1,7 @@
-<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Galerie | ATEMI Mont d'Or</title><meta name="description" content="ATEMI Mont d'Or">
-<link rel="stylesheet" href="styles.css"></head><body>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="animations.css"><link rel="stylesheet" href="responsive.css">
+</head><body>
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html"><img src="logo-atemi.jpg" alt="Logo ATEMI Mont d'Or"></a>
@@ -13,18 +13,23 @@
       <a href="enseignants.html">Enseignants</a>
       <a href="horaires.html">Horaires</a>
       <a href="cotisations.html">Cotisations</a>
+      <a href="actualites.html">Actualités</a>
       <a href="galerie.html">Galerie</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main><section class="page-hero"><div class="container"><span class="eyebrow">Images</span><h1>Galerie</h1><p class="lead">Le dojo, les pratiquants et la vie de l’école.</p></div></section>
-<section class="section"><div class="container"><div class="gallery">
-<figure><img src="photo-1.jpg" alt="Pratique au dojo"></figure>
-<figure><img src="photo-2.jpg" alt="Salle du dojo"></figure>
-<figure><img src="photo-3.jpg" alt="Extérieur du dojo"></figure>
-</div><div class="card placeholder" style="margin-top:22px"><h3>Vidéos</h3><p>Cette section recevra les vidéos de pratique et de stages.</p></div></div></section></main>
+<main><section class="page-hero"><div class="container"><span class="eyebrow">Images & vidéos</span><h1>Galerie</h1><p class="lead">Le dojo, les pratiquants, les stages et la vie de l’école.</p></div></section>
+<section class="section"><div class="container">
+<div class="filters"><button class="filter-btn active" data-filter="all">Tout</button><button class="filter-btn" data-filter="dojo">Dojo</button><button class="filter-btn" data-filter="pratique">Pratique</button><button class="filter-btn" data-filter="stages">Stages</button></div>
+<div class="gallery">
+<figure data-category="pratique"><img src="photo-1.jpg" alt="Pratique au dojo"></figure>
+<figure data-category="dojo"><img src="photo-2.jpg" alt="Salle du dojo"></figure>
+<figure data-category="dojo"><img src="photo-3.jpg" alt="Extérieur du dojo"></figure>
+</div>
+<div class="card placeholder" style="margin-top:22px"><h3>Vidéos</h3><p>Cette section recevra les vidéos de pratique et de stages. Les fichiers pourront être placés dans le dossier <code>videos/</code>.</p></div>
+</div></section></main>
 
 <footer class="footer">
   <div class="container footer-grid">
@@ -34,5 +39,5 @@
   </div>
 </footer>
 <div class="lightbox"><button class="close-lightbox" aria-label="Fermer">×</button><img alt=""></div>
-<script src="script.js"></script>
+<script src="menu.js"></script><script src="gallery.js"></script><script src="script.js"></script>
 </body></html>

@@ -1,0 +1,5 @@
+
+@media (prefers-reduced-motion:no-preference){
+  .card,.course,.person{transition:transform .25s ease,box-shadow .25s ease}
+  .card:hover,.course:hover,.person:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(55,42,25,.10)}
+}
