@@ -130,3 +130,13 @@ Fichiers principaux :
 ## Mise à jour V6.10
 - Renommage de la vidéo en `rencontre-tuishou-mai-2026.mp4`.
 - Mise à jour de la page galerie avec le nouveau nom de fichier.
+
+## Mise à jour V6.11
+- Ajout de la chanson du club sur la page d’accueil.
+- Intégration d’un lecteur audio pour « ATEMI — Entre le ciel et la terre ».
+- Fichier audio : `atemi-entre-le-ciel-et-la-terre.mp3`.
+
+## Mise à jour V6.13
+- Refonte graphique de la page Cotisations.
+- Mise en valeur des montants, des formules et des modalités de paiement.
+- Distinction claire entre accès à tous les cours et cours fixe hebdomadaire.
