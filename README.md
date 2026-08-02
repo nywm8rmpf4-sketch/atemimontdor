@@ -135,3 +135,9 @@ Fichiers principaux :
 - Ajout de la chanson du club sur la page d’accueil.
 - Intégration d’un lecteur audio pour « ATEMI — Entre le ciel et la terre ».
 - Fichier audio : `atemi-entre-le-ciel-et-la-terre.mp3`.
+
+## Mise à jour V6.14
+- Ajout de la page hymne-du-club.html.
+- Ajout d’un accès depuis le sous-menu « Qui sommes-nous ».
+- Ajout d’un encart sur la page d’accueil.
+- Intégration du fichier audio `atemi-entre-le-ciel-et-la-terre.mp3`.

@@ -1151,3 +1151,25 @@ summary{cursor:pointer;font-weight:800;color:var(--red-dark)}
 .teacher-card[id]{
   scroll-margin-top:140px;
 }
+
+
+/* Hymne du club */
+.hymn-card{
+  max-width:880px;
+  margin:0 auto;
+}
+.hymn-player{
+  width:100%;
+  margin-top:18px;
+}
+.hymn-home{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+@media(max-width:720px){
+  .hymn-home{
+    display:block;
+  }
+}
