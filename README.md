@@ -141,3 +141,13 @@ Fichiers principaux :
 - Ajout d’un accès depuis le sous-menu « Qui sommes-nous ».
 - Ajout d’un encart sur la page d’accueil.
 - Intégration du fichier audio `atemi-entre-le-ciel-et-la-terre.mp3`.
+
+## Mise à jour V6.15
+- Ajout de la page videos-youtube.html.
+- Intégration de vidéos historiques et pédagogiques référencées sur l’ancien site ATEMI.
+- Ajout du lien dans la rubrique multimédia et depuis la galerie.
+
+## Mise à jour V6.16
+- Ajout de la page interventions-entreprise.html.
+- Reprise et modernisation du contenu de l’ancienne page « Intervention en entreprise & centres de formation ».
+- Ajout des références et d’un lien depuis la page Contact.
