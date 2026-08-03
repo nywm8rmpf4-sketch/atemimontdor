@@ -331,3 +331,9 @@ Cette version :
 - Ajout d’encadrés « Pour aller plus loin » avec des liens vers les pages détaillées du site.
 - Ajout d’un appel à l’action vers le cours d’essai et le contact.
 - La FAQ doit être revue lors de chaque évolution importante du site afin de rester cohérente.
+
+## Version 7.13 — Lisibilité des liens de la FAQ
+- Séparation plus nette des liens des encadrés « Pour aller plus loin ».
+- Présentation de chaque lien sous forme de pastille distincte.
+- Ajout d’espaces horizontaux et verticaux entre les liens.
+- Sur petit écran, chaque lien occupe une ligne complète pour améliorer la lisibilité.

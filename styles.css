@@ -2857,3 +2857,36 @@ body.mobile-menu-open{
     align-items:flex-start;
   }
 }
+
+
+/* V7.13 — Espacement des liens « Pour aller plus loin » */
+.faq-links{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  column-gap:12px;
+  row-gap:10px;
+}
+.faq-links a{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 11px;
+  border:1px solid rgba(143,29,29,.20);
+  border-radius:999px;
+  background:#fff;
+  line-height:1.25;
+  white-space:normal;
+}
+.faq-links a::after{
+  content:" →";
+  margin-left:4px;
+}
+@media(max-width:520px){
+  .faq-links{
+    align-items:stretch;
+  }
+  .faq-links a{
+    width:100%;
+    justify-content:space-between;
+  }
+}
