@@ -323,3 +323,11 @@ Cette version :
 - Déplacement de « Membres honoraires et bienfaiteurs » dans la rubrique Le dojo.
 - Mise à jour cohérente des menus desktop et mobile.
 - Ajout de deux accès directs sur la page d’accueil de la rubrique Le dojo.
+
+## Version 7.12 — FAQ enrichie
+- Refonte complète de la FAQ avec des réponses validées à partir du contenu existant du site.
+- Organisation par thèmes : découverte, début, disciplines, Tai Chi, Tui Shou, bien-être, cours, enseignants, grades, philosophie, dojo et ressources.
+- Ajout d’un sommaire rapide et de réponses repliables.
+- Ajout d’encadrés « Pour aller plus loin » avec des liens vers les pages détaillées du site.
+- Ajout d’un appel à l’action vers le cours d’essai et le contact.
+- La FAQ doit être revue lors de chaque évolution importante du site afin de rester cohérente.
