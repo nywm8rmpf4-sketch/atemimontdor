@@ -316,3 +316,10 @@ Cette version :
 - Liens directs vers les sections détaillées du Nei Gong Yang Sheng, Tai Chi Chuan, Xing Yi Quan, Bagua Zhang et Da Cheng Chuan.
 - Ajout d’ancres spécifiques dans le programme pédagogique pour le Tui Shou et l’auto-défense.
 - Amélioration du survol et de la navigation au clavier des cartes.
+
+## Version 7.11 — Réorganisation du dojo et des ressources
+- Déplacement de « Vidéos YouTube » dans la rubrique Ressources.
+- Déplacement de « Gradés formés au dojo » dans la rubrique Le dojo.
+- Déplacement de « Membres honoraires et bienfaiteurs » dans la rubrique Le dojo.
+- Mise à jour cohérente des menus desktop et mobile.
+- Ajout de deux accès directs sur la page d’accueil de la rubrique Le dojo.
