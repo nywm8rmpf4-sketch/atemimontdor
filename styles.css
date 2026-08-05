@@ -3059,3 +3059,25 @@ details[open] summary::after{content:"−";background:var(--red);color:white}
   .card,.summer-feature{border-radius:20px}
   .timeline::before{left:33px}
 }
+
+/* Photo de transmission — page Notre lignée */
+.lineage-photo{
+  margin:22px 0 0 72px;
+  overflow:hidden;
+  border-radius:24px;
+  background:var(--surface, #fff);
+  border:1px solid rgba(118,27,38,.14);
+  box-shadow:var(--shadow-soft);
+}
+.lineage-photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.lineage-photo figcaption{padding:12px 16px;color:var(--muted);font-size:.94rem}
+.gallery figcaption{padding:10px 14px;background:rgba(255,255,255,.94);color:var(--ink);font-size:.9rem}
+@media(max-width:640px){.lineage-photo{margin-left:0;border-radius:18px}}
+
+/* Pré-inscription en ligne */
+.registration-hero{position:relative;overflow:hidden}
+.registration-hero::after{content:"";position:absolute;right:-7rem;bottom:-8rem;width:22rem;height:22rem;border:1px solid rgba(184,139,55,.28);border-radius:50%;box-shadow:0 0 0 2.8rem rgba(184,139,55,.06),0 0 0 5.6rem rgba(184,139,55,.035);pointer-events:none}
+.registration-intro{display:grid;gap:1.5rem}.registration-step{position:relative;padding-top:4.7rem}.registration-step h2{font-size:1.25rem}.step-number{position:absolute;top:1.35rem;left:1.35rem;display:grid;place-items:center;width:2.55rem;height:2.55rem;border-radius:50%;background:var(--red,#7b1f28);color:white;font-weight:800;box-shadow:0 8px 20px rgba(91,25,32,.2)}
+.registration-note{margin-top:.25rem}.registration-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,330px);gap:2rem;align-items:start}.registration-form{display:grid;gap:1.5rem}.form-section{padding:clamp(1.25rem,2.5vw,2rem);border:1px solid rgba(101,74,42,.16);border-radius:22px;background:rgba(255,252,246,.94);box-shadow:0 18px 44px rgba(62,42,20,.07)}.section-head.compact{margin-bottom:1.25rem}.section-head.compact h2{margin-bottom:0}.form-grid{display:grid;gap:1rem}.form-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.form-field{display:grid;gap:.45rem;font-weight:700;color:#33291f}.form-field input,.form-field select,.form-field textarea{width:100%;box-sizing:border-box;border:1px solid rgba(94,68,39,.28);border-radius:12px;background:#fffdf8;color:#2f271f;font:inherit;font-weight:400;padding:.82rem .9rem;transition:border-color .2s,box-shadow .2s,background .2s}.form-field textarea{resize:vertical;min-height:6rem}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:#8d2732;box-shadow:0 0 0 4px rgba(141,39,50,.11);background:#fff}.form-field input:user-invalid,.form-field select:user-invalid{border-color:#a42d39}.form-field b,.consent-field b,.form-fieldset b{color:#8d2732}.form-fieldset{border:0;padding:0;margin:1.3rem 0}.form-fieldset legend{font-weight:800;margin-bottom:.7rem}.choice-row,.choice-grid{display:grid;gap:.7rem}.choice-row{grid-template-columns:repeat(2,minmax(0,1fr))}.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.choice-card{position:relative;display:flex;align-items:flex-start;gap:.65rem;padding:.85rem .9rem;border:1px solid rgba(94,68,39,.2);border-radius:12px;background:#fffdf8;cursor:pointer;transition:.2s}.choice-card:hover{border-color:rgba(141,39,50,.55);transform:translateY(-1px)}.choice-card:has(input:checked){border-color:#8d2732;background:rgba(141,39,50,.055);box-shadow:0 0 0 3px rgba(141,39,50,.08)}.choice-card input{margin-top:.18rem;accent-color:#8d2732}.choice-card span{font-weight:650}.consent-field{display:flex;align-items:flex-start;gap:.75rem;padding:1rem;border-radius:12px;background:rgba(184,139,55,.08);border:1px solid rgba(184,139,55,.22);cursor:pointer}.consent-field input{margin-top:.2rem;accent-color:#8d2732}.form-status{min-height:1.4rem;margin:.8rem 0;font-weight:700}.form-status.error{color:#932b35}.form-status.success{color:#42623e}.field-error{margin:.45rem 0 0;color:#932b35;font-weight:700}.registration-submit{width:100%;justify-content:center}.registration-aside{display:grid;gap:1rem}.sticky-card{position:sticky;top:105px}.aside-actions{display:grid;gap:.7rem;margin-top:1.1rem}.aside-actions .btn{text-align:center;justify-content:center}.contact-mini-card a{overflow-wrap:anywhere}
+@media(max-width:900px){.registration-layout{grid-template-columns:1fr}.sticky-card{position:static}.registration-aside{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.form-grid-2,.choice-row,.choice-grid,.registration-aside{grid-template-columns:1fr}.form-section{border-radius:17px}.registration-hero::after{opacity:.55}}

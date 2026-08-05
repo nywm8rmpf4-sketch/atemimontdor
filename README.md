@@ -1,3 +1,5 @@
+Version v7.16 – ajout de la page de pré-inscription en ligne.
+
 # ATEMI Mont d'Or — V4.1 à plat
 
 Tous les fichiers doivent être téléversés directement à la racine du dépôt GitHub.

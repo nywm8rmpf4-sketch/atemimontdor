@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pratique estivale 2026 | ATEMI Mont d'Or</title><meta name="description" content="Pratique estivale ATEMI Mont d’Or, été 2026, au parc des Gorges d’Enfer.">
+<title>Pré-inscription en ligne | ATEMI Mont d'Or</title><meta name="description" content="Pré-inscription en ligne aux cours réguliers de Qi Gong, Tai Chi Chuan, Tui Shou et boxes chinoises d’ATEMI Mont d’Or.">
 <link rel="stylesheet" href="styles.css?v=b86e5ed244c0"><link rel="stylesheet" href="animations.css?v=64adad03b7eb"><link rel="stylesheet" href="responsive.css?v=763878679ee6">
 
 <style id="mobile-nav-critical">
@@ -312,29 +312,93 @@
 
 
 
-
 <main>
-<section class="page-hero">
+<section class="page-hero registration-hero">
   <div class="container">
-    <span class="eyebrow">Été 2026</span>
-    <h1>Pratique estivale</h1>
-    <p class="lead">Cours gratuits en plein air, tous les jeudis soir au parc des Gorges d’Enfer.</p>
+    <span class="eyebrow">Saison 2026–2027</span>
+    <h1>Pré-inscription en ligne</h1>
+    <p class="lead">Signalez votre souhait de rejoindre les cours réguliers de Qi Gong, Tai Chi Chuan, Tui Shou ou boxes chinoises. L’équipe ATEMI vous recontactera pour finaliser l’inscription.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container registration-intro">
+    <div class="grid grid-3">
+      <article class="card registration-step"><span class="step-number">1</span><h2>Choisissez</h2><p>Indiquez les disciplines et créneaux qui vous intéressent.</p></article>
+      <article class="card registration-step"><span class="step-number">2</span><h2>Envoyez</h2><p>Le formulaire prépare un courriel récapitulatif à destination du club.</p></article>
+      <article class="card registration-step"><span class="step-number">3</span><h2>Finalisez</h2><p>L’équipe vous confirme les modalités, les documents et le règlement.</p></article>
+    </div>
+    <div class="table-note registration-note"><strong>À savoir :</strong> cette pré-inscription ne vaut pas inscription définitive et ne déclenche aucun paiement. Les informations saisies ne sont pas enregistrées sur le site.</div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="poster-page">
-      <img src="affiche-pratique-estivale-2026.jpg?v=8c84988a2306" alt="Affiche de la pratique estivale ATEMI Mont d'Or, été 2026">
-    </div>
-    <div class="actions" style="justify-content:center">
-      <a class="btn btn-primary" href="contact.html">Nous contacter</a>
-      <a class="btn btn-secondary" href="actualites.html">Toutes les actualités</a>
-    </div>
+  <div class="container registration-layout">
+    <form id="preregistration-form" class="registration-form" novalidate>
+      <div class="form-section">
+        <div class="section-head compact"><span class="eyebrow">Coordonnées</span><h2>Votre identité</h2></div>
+        <div class="form-grid form-grid-2">
+          <label class="form-field"><span>Prénom <b aria-hidden="true">*</b></span><input type="text" name="prenom" autocomplete="given-name" required></label>
+          <label class="form-field"><span>Nom <b aria-hidden="true">*</b></span><input type="text" name="nom" autocomplete="family-name" required></label>
+          <label class="form-field"><span>Adresse électronique <b aria-hidden="true">*</b></span><input type="email" name="email" autocomplete="email" required></label>
+          <label class="form-field"><span>Téléphone <b aria-hidden="true">*</b></span><input type="tel" name="telephone" autocomplete="tel" required></label>
+          <label class="form-field"><span>Date de naissance</span><input type="date" name="naissance"></label>
+          <label class="form-field"><span>Commune de résidence</span><input type="text" name="commune" autocomplete="address-level2"></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="section-head compact"><span class="eyebrow">Pratique</span><h2>Votre projet</h2></div>
+        <fieldset class="form-fieldset">
+          <legend>Vous pré-inscrivez <b aria-hidden="true">*</b></legend>
+          <div class="choice-row">
+            <label class="choice-card"><input type="radio" name="public" value="Adulte" required><span>Un adulte</span></label>
+            <label class="choice-card"><input type="radio" name="public" value="Enfant ou adolescent" required><span>Un enfant ou adolescent</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Discipline(s) souhaitée(s) <b aria-hidden="true">*</b></legend>
+          <div class="choice-grid">
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Qi Gong / Yang Sheng / Nei Gong"><span>Qi Gong, Yang Sheng ou Nei Gong</span></label>
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Tai Chi Chuan"><span>Tai Chi Chuan</span></label>
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Tui Shou"><span>Tui Shou</span></label>
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Boxes chinoises adultes"><span>Boxes chinoises adultes</span></label>
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Da Cheng Chuan"><span>Da Cheng Chuan</span></label>
+            <label class="choice-card"><input type="checkbox" name="discipline" value="Boxes chinoises enfants / adolescents"><span>Boxes chinoises enfants ou adolescents</span></label>
+          </div>
+          <p class="field-error" id="discipline-error" hidden>Choisissez au moins une discipline.</p>
+        </fieldset>
+
+        <div class="form-grid form-grid-2">
+          <label class="form-field"><span>Formule envisagée</span><select name="formule"><option value="À déterminer">À déterminer</option><option value="Accès à tous les cours">Accès à tous les cours</option><option value="Un seul cours fixe par semaine">Un seul cours fixe par semaine</option></select></label>
+          <label class="form-field"><span>Expérience</span><select name="experience"><option value="Débutant complet">Débutant complet</option><option value="Moins de 2 ans">Moins de 2 ans</option><option value="2 à 5 ans">2 à 5 ans</option><option value="Plus de 5 ans">Plus de 5 ans</option></select></label>
+        </div>
+        <label class="form-field"><span>Créneaux ou jours préférés</span><textarea name="creneaux" rows="3" placeholder="Ex. : lundi soir, mercredi matin…"></textarea></label>
+        <label class="form-field"><span>Message ou précision utile</span><textarea name="message" rows="5" placeholder="Question, pratique antérieure, contrainte particulière…"></textarea></label>
+      </div>
+
+      <div class="form-section">
+        <div class="section-head compact"><span class="eyebrow">Validation</span><h2>Avant l’envoi</h2></div>
+        <label class="consent-field"><input type="checkbox" name="consentement" required><span>J’accepte que les informations renseignées soient transmises par courriel à ATEMI Mont d’Or afin de traiter ma demande de pré-inscription. <b aria-hidden="true">*</b></span></label>
+        <p class="mini">Les champs marqués d’un astérisque sont obligatoires. Le bouton ci-dessous ouvre votre application de messagerie avec un courriel déjà préparé ; vous devrez ensuite l’envoyer.</p>
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        <button class="btn btn-primary registration-submit" type="submit">Préparer ma demande de pré-inscription</button>
+      </div>
+    </form>
+
+    <aside class="registration-aside">
+      <article class="card accent sticky-card">
+        <span class="badge">Besoin d’aide ?</span>
+        <h2>Avant de vous décider</h2>
+        <p>Vous pouvez consulter les horaires et les cotisations, ou commencer par un cours d’essai.</p>
+        <div class="aside-actions"><a class="btn btn-secondary" href="horaires.html">Voir les horaires</a><a class="btn btn-secondary" href="cotisations.html">Voir les cotisations</a><a class="btn btn-primary" href="commencer.html#essai">Essayer un cours</a></div>
+      </article>
+      <article class="card contact-mini-card"><h3>Contact direct</h3><p><a href="tel:+33478914550">04 78 91 45 50</a><br><a href="mailto:atemimontdor@gmail.com">atemimontdor@gmail.com</a></p><p>6, rue du Lavoir<br>69650 Saint-Germain-au-Mont-d’Or</p></article>
+    </aside>
   </div>
 </section>
 </main>
-
 
 
 <footer class="footer footer-v7">
@@ -374,5 +438,5 @@
 </footer>
 
 <div class="lightbox"><button class="close-lightbox" aria-label="Fermer">×</button><img alt=""></div>
-<script src="menu.js?v=f30235587a39"></script><script src="gallery.js?v=bf802b84985f"></script><script src="script.js?v=97f4d44bff2d"></script>
+<script src="preinscription.js?v=3effe0676f1c"></script><script src="menu.js?v=f30235587a39"></script><script src="gallery.js?v=bf802b84985f"></script><script src="script.js?v=97f4d44bff2d"></script>
 </body></html>
