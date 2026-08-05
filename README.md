@@ -339,3 +339,9 @@ Cette version :
 - Présentation de chaque lien sous forme de pastille distincte.
 - Ajout d’espaces horizontaux et verticaux entre les liens.
 - Sur petit écran, chaque lien occupe une ligne complète pour améliorer la lisibilité.
+
+
+## Version 7.20
+- Menu « Pratiquer » séparé en « Cours » et « Ateliers & stages ».
+- « Interventions en entreprise » déplacé dans « Ateliers & stages ».
+- Menus mobile, fils d’Ariane et pied de page harmonisés.
