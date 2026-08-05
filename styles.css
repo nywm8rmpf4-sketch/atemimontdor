@@ -3081,3 +3081,113 @@ details[open] summary::after{content:"−";background:var(--red);color:white}
 .registration-note{margin-top:.25rem}.registration-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,330px);gap:2rem;align-items:start}.registration-form{display:grid;gap:1.5rem}.form-section{padding:clamp(1.25rem,2.5vw,2rem);border:1px solid rgba(101,74,42,.16);border-radius:22px;background:rgba(255,252,246,.94);box-shadow:0 18px 44px rgba(62,42,20,.07)}.section-head.compact{margin-bottom:1.25rem}.section-head.compact h2{margin-bottom:0}.form-grid{display:grid;gap:1rem}.form-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.form-field{display:grid;gap:.45rem;font-weight:700;color:#33291f}.form-field input,.form-field select,.form-field textarea{width:100%;box-sizing:border-box;border:1px solid rgba(94,68,39,.28);border-radius:12px;background:#fffdf8;color:#2f271f;font:inherit;font-weight:400;padding:.82rem .9rem;transition:border-color .2s,box-shadow .2s,background .2s}.form-field textarea{resize:vertical;min-height:6rem}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:#8d2732;box-shadow:0 0 0 4px rgba(141,39,50,.11);background:#fff}.form-field input:user-invalid,.form-field select:user-invalid{border-color:#a42d39}.form-field b,.consent-field b,.form-fieldset b{color:#8d2732}.form-fieldset{border:0;padding:0;margin:1.3rem 0}.form-fieldset legend{font-weight:800;margin-bottom:.7rem}.choice-row,.choice-grid{display:grid;gap:.7rem}.choice-row{grid-template-columns:repeat(2,minmax(0,1fr))}.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.choice-card{position:relative;display:flex;align-items:flex-start;gap:.65rem;padding:.85rem .9rem;border:1px solid rgba(94,68,39,.2);border-radius:12px;background:#fffdf8;cursor:pointer;transition:.2s}.choice-card:hover{border-color:rgba(141,39,50,.55);transform:translateY(-1px)}.choice-card:has(input:checked){border-color:#8d2732;background:rgba(141,39,50,.055);box-shadow:0 0 0 3px rgba(141,39,50,.08)}.choice-card input{margin-top:.18rem;accent-color:#8d2732}.choice-card span{font-weight:650}.consent-field{display:flex;align-items:flex-start;gap:.75rem;padding:1rem;border-radius:12px;background:rgba(184,139,55,.08);border:1px solid rgba(184,139,55,.22);cursor:pointer}.consent-field input{margin-top:.2rem;accent-color:#8d2732}.form-status{min-height:1.4rem;margin:.8rem 0;font-weight:700}.form-status.error{color:#932b35}.form-status.success{color:#42623e}.field-error{margin:.45rem 0 0;color:#932b35;font-weight:700}.registration-submit{width:100%;justify-content:center}.registration-aside{display:grid;gap:1rem}.sticky-card{position:sticky;top:105px}.aside-actions{display:grid;gap:.7rem;margin-top:1.1rem}.aside-actions .btn{text-align:center;justify-content:center}.contact-mini-card a{overflow-wrap:anywhere}
 @media(max-width:900px){.registration-layout{grid-template-columns:1fr}.sticky-card{position:static}.registration-aside{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.form-grid-2,.choice-row,.choice-grid,.registration-aside{grid-template-columns:1fr}.form-section{border-radius:17px}.registration-hero::after{opacity:.55}}
+
+
+/* Accueil — rentrée et pré-inscription */
+.hero-actions .btn-highlight{
+  background:linear-gradient(135deg,#9e712b,#c49a51);
+  border-color:rgba(255,255,255,.34);
+  color:#fff;
+  box-shadow:0 10px 24px rgba(112,73,18,.24);
+}
+.hero-actions .btn-highlight:hover,
+.hero-actions .btn-highlight:focus-visible{
+  background:linear-gradient(135deg,#885f20,#b1843d);
+  color:#fff;
+}
+.season-home{padding-top:clamp(24px,4vw,48px);padding-bottom:clamp(24px,5vw,64px)}
+.season-panel{
+  display:grid;
+  grid-template-columns:minmax(260px,.9fr) minmax(0,1.45fr);
+  gap:clamp(24px,4vw,52px);
+  padding:clamp(28px,5vw,58px);
+  border:1px solid rgba(145,103,40,.22);
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 12% 15%,rgba(190,145,70,.18),transparent 34%),
+    linear-gradient(135deg,#fffaf2 0%,#f3e7d5 100%);
+  box-shadow:0 22px 55px rgba(65,42,20,.13);
+  overflow:hidden;
+  position:relative;
+}
+.season-panel::after{
+  content:"";
+  position:absolute;
+  width:220px;height:220px;
+  right:-80px;bottom:-110px;
+  border:1px solid rgba(126,30,34,.14);
+  border-radius:50%;
+  box-shadow:0 0 0 28px rgba(126,30,34,.035),0 0 0 58px rgba(126,30,34,.025);
+  pointer-events:none;
+}
+.season-intro{position:relative;z-index:1}
+.season-intro h2{margin:.35rem 0 .8rem}
+.season-intro .lead{font-size:1.08rem;margin-bottom:1.35rem}
+.season-links{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  position:relative;
+  z-index:1;
+}
+.season-links a{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-rows:auto auto;
+  column-gap:14px;
+  align-items:center;
+  min-height:112px;
+  padding:18px;
+  border:1px solid rgba(102,70,36,.14);
+  border-radius:18px;
+  background:rgba(255,255,255,.78);
+  color:inherit;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(58,38,18,.07);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.season-links a:hover,.season-links a:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px rgba(58,38,18,.12);
+  border-color:rgba(126,30,34,.3);
+}
+.season-links strong{font-size:1.02rem;color:#4b2524}
+.season-links small{grid-column:2;color:#6d6257;line-height:1.35}
+.season-date,.season-icon{
+  grid-row:1/3;
+  display:grid;
+  place-items:center;
+  width:62px;min-height:62px;
+  padding:7px;
+  border-radius:15px;
+  background:#7e1e22;
+  color:#fff;
+  font-weight:750;
+  line-height:1.08;
+  text-align:center;
+  font-size:.82rem;
+}
+.season-icon{font-size:1.45rem;background:#9a6d2c}
+@media(max-width:900px){
+  .season-panel{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .season-panel{padding:24px 18px;border-radius:22px}
+  .season-links{grid-template-columns:1fr}
+  .season-links a{min-height:96px}
+  .hero-actions .btn{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .season-links a{transition:none}
+}
+
+/* v7.18 — fil d’Ariane et calendrier interactif */
+.breadcrumb-wrap{background:rgba(255,250,241,.82);border-bottom:1px solid rgba(102,72,36,.12)}
+.breadcrumb{display:flex;align-items:center;gap:.55rem;min-height:44px;padding:.55rem 0;font-size:.9rem;color:#6a5a49;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.breadcrumb::-webkit-scrollbar{display:none}.breadcrumb a{color:#7c1f2b;text-decoration:none;font-weight:650}.breadcrumb a:hover{text-decoration:underline}.breadcrumb-sep{color:#b79b6a}.breadcrumb-current{color:#514437;overflow:hidden;text-overflow:ellipsis}
+.interactive-calendar{margin-bottom:2.2rem;border:1px solid rgba(124,31,43,.16);border-radius:24px;background:linear-gradient(145deg,#fffaf1,#f4eadb);box-shadow:0 18px 48px rgba(62,43,25,.10);overflow:hidden}
+.calendar-toolbar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;padding:1rem 1.15rem;background:#6f1724;color:#fff}
+.calendar-toolbar button{width:42px;height:42px;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(255,255,255,.1);color:#fff;font-size:1.45rem;cursor:pointer}.calendar-toolbar button:hover{background:rgba(255,255,255,.2)}
+.calendar-month-title{text-align:center}.calendar-month-title strong{display:block;font-size:1.22rem}.calendar-month-title span{font-size:.82rem;opacity:.82}
+.calendar-body{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:0}.calendar-grid-wrap{padding:1.1rem}.calendar-weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:.35rem}.calendar-weekdays span{text-align:center;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#756553;padding:.35rem 0}.calendar-day{position:relative;min-height:58px;border:1px solid rgba(102,72,36,.12);border-radius:12px;background:rgba(255,255,255,.72);padding:.45rem;font:inherit;color:#43372d;text-align:left}.calendar-day.is-outside{opacity:.34}.calendar-day.has-event{border-color:rgba(124,31,43,.34);background:#fff}.calendar-day.has-event::after{content:"";position:absolute;right:8px;bottom:8px;width:8px;height:8px;border-radius:50%;background:#a98a43}.calendar-day.is-selected{outline:3px solid rgba(124,31,43,.22);border-color:#7c1f2b}.calendar-day button{all:unset;cursor:pointer;position:absolute;inset:0;padding:.45rem}.calendar-event-panel{padding:1.35rem;border-left:1px solid rgba(102,72,36,.12);background:rgba(255,255,255,.58)}.calendar-event-panel h3{margin-top:0}.calendar-event-list{display:grid;gap:.75rem}.calendar-event-item{padding:.85rem;border-radius:14px;background:#fff;border-left:4px solid #a98a43}.calendar-event-item strong{display:block;color:#6f1724}.calendar-status{display:inline-block;margin-top:.4rem;padding:.18rem .5rem;border-radius:999px;font-size:.75rem;background:#efe4cc;color:#65512d}.calendar-status.confirmed{background:#e2efe6;color:#285c38}.calendar-empty{color:#756553;font-style:italic}.calendar-jump{display:flex;flex-wrap:wrap;gap:.5rem;padding:0 1.1rem 1.1rem}.calendar-jump button{border:1px solid rgba(124,31,43,.22);border-radius:999px;background:#fffaf1;color:#6f1724;padding:.48rem .8rem;cursor:pointer}.calendar-jump button[aria-current=true]{background:#6f1724;color:white}
+@media(max-width:760px){.breadcrumb{font-size:.82rem}.calendar-body{grid-template-columns:1fr}.calendar-event-panel{border-left:0;border-top:1px solid rgba(102,72,36,.12)}.calendar-day{min-height:48px;padding:.35rem}.calendar-weekdays span{font-size:.66rem}.calendar-toolbar{gap:.45rem;padding:.8rem}.calendar-month-title strong{font-size:1.05rem}}
