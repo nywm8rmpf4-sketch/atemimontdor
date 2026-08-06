@@ -3259,3 +3259,16 @@ body.viewer-open{overflow:hidden}.media-viewer[hidden]{display:none}.media-viewe
 .hero-v7 .hero-grid > *{position:relative;z-index:1}
 @media(max-width:900px){.hero-v7 .hero-grid::before{opacity:.11}}
 @media(max-width:640px){.hero-v7 .hero-grid::before{opacity:.085}}
+
+
+/* Indicateur permanent de version — v7.23 */
+.site-version-badge{
+  position:fixed;right:10px;bottom:8px;z-index:9999;
+  padding:4px 7px;border:1px solid rgba(20,34,28,.14);border-radius:6px;
+  background:rgba(246,242,233,.82);backdrop-filter:blur(5px);
+  color:rgba(20,34,28,.62);font:500 10px/1.25 var(--sans,Arial,sans-serif);
+  letter-spacing:.02em;white-space:nowrap;box-shadow:0 2px 10px rgba(17,35,28,.08);
+  pointer-events:none;user-select:text;
+}
+@media(max-width:650px){.site-version-badge{right:6px;bottom:5px;font-size:9px;padding:3px 5px;opacity:.88}}
+@media print{.site-version-badge{display:none!important}}
