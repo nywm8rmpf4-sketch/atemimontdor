@@ -1,70 +1,63 @@
-# Site ATEMI Mont d’Or
+# Site ATEMI Mont d’Or — version 7.26
 
-Version **7.25** — build **20260806-172038** du **06/08/2026 17:20**.
+Site statique officiel de l’association ATEMI Mont d’Or, conçu pour être publié directement avec GitHub Pages.
 
-Site statique officiel de l’association ATEMI Mont d’Or, consacré aux arts martiaux internes chinois, au Qi Gong et aux activités du dojo.
+## Version livrée
+
+- Version : **7.26**
+- Build : **20260806-174500**
+- Date : **6 août 2026 à 17 h 45**
+- Base : version 7.24 vérifiée
+
+## Déploiement GitHub Pages
+
+Tous les fichiers du ZIP doivent être extraits puis téléversés **à la racine de la branche `main`** du dépôt `atemimontdor`.
+
+Configuration attendue :
+
+- Source : `Deploy from a branch`
+- Branche : `main`
+- Dossier : `/(root)`
+
+Après publication, contrôler :
+
+1. `https://nywm8rmpf4-sketch.github.io/atemimontdor/build-info.json`
+2. La mention fixe « ATEMI v7.26 » en bas à droite.
+3. La mention « Version publique ATEMI v7.26 » dans le pied de page.
+4. Le filigrane des pratiquants sur la page d’accueil.
 
 ## Fonctionnalités principales
 
-- navigation responsive pour ordinateur, tablette et mobile ;
-- rubriques Découvrir, Cours, Ateliers & stages, Dojo, Ressources, Association et Contact ;
-- pages détaillées sur les disciplines, les fondements et le programme pédagogique ;
-- horaires, cotisations et pré-inscription en ligne ;
-- calendrier interactif des rendez-vous 2026–2027 ;
-- galerie avec photos, vidéo locale et contenus YouTube ;
-- bibliothèque des lettres des professeurs, lexique, articles de presse et témoignages ;
-- informations d’accès au dojo, transports en commun et itinéraires ;
-- fil d’Ariane et navigation mobile adaptée à Safari iOS et Chrome Android ;
-- versionnement anti-cache par empreinte SHA-256 des ressources statiques.
+- Navigation responsive avec menus « Cours » et « Ateliers & stages » séparés.
+- Présentation des disciplines, enseignants, dojo, lignée et association.
+- Horaires, cotisations, pré-inscription et cours d’essai.
+- Calendrier et grands rendez-vous 2026–2027.
+- Galerie avec agrandissement des médias.
+- Ressources : vidéos, lettres des professeurs, lexique et presse.
+- Fil d’Ariane et page 404.
+- Chemins relatifs compatibles avec GitHub Pages et tout hébergement statique.
+- Versionnement anti-cache des fichiers CSS, JavaScript et médias référencés.
 
-## Déploiement
+## Fichiers de référence
 
-Tous les fichiers publiables sont placés **à la racine** du site. Les liens internes sont relatifs : le site peut être déployé à la racine d’un domaine ou dans un sous-chemin GitHub Pages.
+- `index.html` : page d’accueil.
+- `styles.css`, `responsive.css`, `animations.css` : présentation.
+- `menu.js`, `script.js`, `gallery.js`, `calendar.js`, `library.js`, `preinscription.js` : comportements.
+- `build-info.json` : version et identifiant du build publié.
+- `asset-manifest.json` : inventaire et empreintes des ressources.
+- `generation-report.md` : contrôles exécutés avant livraison.
+- `CHANGELOG.md`, `ROADMAP.md`, `CONTRIBUTING.md` : suivi et maintenance.
 
-### GitHub Pages
+## Maintenance obligatoire à chaque version
 
-1. Copier l’ensemble des fichiers de l’archive dans la branche publiée.
-2. Ne pas déplacer les médias ni les fichiers CSS/JS dans des sous-dossiers sans mettre à jour les références.
-3. Publier la branche depuis les paramètres GitHub Pages.
-4. Vérifier `index.html`, la navigation mobile, la vidéo locale et le formulaire de pré-inscription.
+Mettre à jour ensemble :
 
-## Fichiers techniques
+- `README.md` ;
+- `CHANGELOG.md` ;
+- `ROADMAP.md` si nécessaire ;
+- `build-info.json` ;
+- le badge de version des pages ;
+- les identifiants anti-cache ;
+- `generation-report.md`.
 
-- `styles.css`, `responsive.css`, `animations.css` : présentation générale ;
-- `menu.js` : navigation desktop/mobile ;
-- `script.js` : interactions communes ;
-- `gallery.js` : galerie et affichage agrandi ;
-- `calendar.js` : calendrier interactif ;
-- `library.js` : filtres et recherche des lettres ;
-- `preinscription.js` : comportement du formulaire de pré-inscription ;
-- `version-assets.py` : génération des identifiants anti-cache ;
-- `asset-manifest.json` : empreintes des ressources ;
-- `build-info.json` : identification du build livré.
-
-## Documentation du projet
-
-- `CHANGELOG.md` : historique des versions ;
-- `ROADMAP.md` : améliorations prévues et état d’avancement ;
-- `CONTRIBUTING.md` : règles de modification et de livraison ;
-- `docs/architecture.md` : architecture fonctionnelle et technique ;
-- `docs/design-system.md` : conventions visuelles ;
-- `docs/contenu.md` : règles de gestion éditoriale ;
-- `docs/maintenance.md` : procédure de maintenance et de validation ;
-- `generation-report.md` : rapport de contrôle de la présente livraison.
-
-## Procédure obligatoire avant chaque livraison
-
-1. intégrer toutes les demandes validées ;
-2. maintenir la FAQ cohérente avec les pages du site ;
-3. mettre à jour `README.md`, `CHANGELOG.md`, `ROADMAP.md` et la documentation concernée ;
-4. mettre à jour la version et `build-info.json` ;
-5. exécuter `python3 version-assets.py` ;
-6. vérifier les liens internes et les ressources référencées ;
-7. créer l’archive ZIP ;
-8. réextraire l’archive dans un dossier distinct ;
-9. vérifier les fichiers, la version, le build, les pages modifiées et chacune des évolutions demandées ;
-10. ne livrer la version qu’après validation de tous les contrôles.
-
-## Version actuelle
-
-La version 7.25 est une version de consolidation documentaire et technique fondée sur la version 7.24 vérifiée. Elle ne supprime aucune page fonctionnelle existante.
+La FAQ doit rester cohérente avec les horaires, disciplines, inscriptions, enseignants, accès, grades et ressources.
