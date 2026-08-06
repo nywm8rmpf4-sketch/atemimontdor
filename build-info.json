@@ -1,7 +1,12 @@
 {
   "site": "ATEMI Mont d’Or",
-  "version": "v7.23",
-  "generated_at": "2026-08-06T15:01:35+02:00",
-  "build": "20260806-150135",
-  "styles_hash": "22624fa1678e"
+  "version": "7.24",
+  "build_id": "20260806-153800",
+  "generated_local": "2026-08-06T15:38:00+02:00",
+  "base_version": "7.20",
+  "features": [
+    "filigrane pratiquants visible sur la page d’accueil",
+    "indicateur de version sur toutes les pages",
+    "versionnement anticache de styles.css"
+  ]
 }
