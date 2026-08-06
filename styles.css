@@ -3247,3 +3247,15 @@ body.viewer-open{overflow:hidden}.media-viewer[hidden]{display:none}.media-viewe
     from{opacity:0;transform:translateY(-48%) translateX(12px) rotate(-1deg)}
   }
 }
+
+/* v7.22 — correction visibilité du filigrane ATEMI */
+.hero-v7{position:relative;overflow:hidden;isolation:isolate}
+.hero-v7 .hero-grid{position:relative;z-index:1}
+.hero-v7 .hero-grid::before{
+  z-index:0;
+  opacity:.14;
+  filter:sepia(.18) saturate(.75) contrast(1.05);
+}
+.hero-v7 .hero-grid > *{position:relative;z-index:1}
+@media(max-width:900px){.hero-v7 .hero-grid::before{opacity:.11}}
+@media(max-width:640px){.hero-v7 .hero-grid::before{opacity:.085}}
