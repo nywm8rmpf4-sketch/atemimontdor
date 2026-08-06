@@ -2,6 +2,8 @@
 
 Site statique officiel de l’association ATEMI Mont d’Or, conçu pour être publié directement avec GitHub Pages.
 
+
+
 ## Version livrée
 
 - Version : **7.26**
