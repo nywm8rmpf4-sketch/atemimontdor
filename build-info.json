@@ -1,12 +1,15 @@
 {
   "site": "ATEMI Mont d’Or",
-  "version": "7.24",
-  "build_id": "20260806-153800",
-  "generated_local": "2026-08-06T15:38:00+02:00",
-  "base_version": "7.20",
+  "version": "7.25",
+  "build_id": "20260806-172038",
+  "generated_local": "2026-08-06T17:20:38+02:00",
+  "base_version": "7.24",
   "features": [
-    "filigrane pratiquants visible sur la page d’accueil",
-    "indicateur de version sur toutes les pages",
-    "versionnement anticache de styles.css"
+    "documentation projet entièrement remise à niveau",
+    "ajout de CHANGELOG.md, ROADMAP.md et CONTRIBUTING.md",
+    "ajout du dossier docs et du rapport de génération",
+    "mise à jour systématique du README.md",
+    "renouvellement du versionnement anticache de tous les médias et ressources statiques",
+    "contrôle des liens internes, des ressources et de la cohérence de version"
   ]
 }

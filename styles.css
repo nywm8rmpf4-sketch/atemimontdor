@@ -3206,7 +3206,7 @@ body.viewer-open{overflow:hidden}.media-viewer[hidden]{display:none}.media-viewe
 /* ATEMI BUILD v7.24 */
 /* Filigrane historique de la page d'accueil */
 .hero-v7{position:relative;overflow:hidden;isolation:isolate}
-.hero-v7::before{content:"";position:absolute;z-index:0;left:-4vw;top:50%;width:min(54vw,760px);aspect-ratio:658/379;transform:translateY(-49%);background:url("fond-pratiquants-atemi.png?v=20260806-153800") center/contain no-repeat;opacity:.20;filter:sepia(.16) saturate(.75) contrast(1.12);pointer-events:none}
+.hero-v7::before{content:"";position:absolute;z-index:0;left:-4vw;top:50%;width:min(54vw,760px);aspect-ratio:658/379;transform:translateY(-49%);background:url("fond-pratiquants-atemi.png?v=3e18c3dc500a") center/contain no-repeat;opacity:.20;filter:sepia(.16) saturate(.75) contrast(1.12);pointer-events:none}
 .hero-v7 .hero-grid{position:relative;z-index:1}
 .hero-v7 .hero-grid>div:first-child{position:relative;text-shadow:0 1px 0 rgba(255,255,255,.28)}
 /* Version visible pour identifier le déploiement GitHub Pages */
